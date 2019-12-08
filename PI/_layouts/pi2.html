@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="utf-8"/>
+
+		{% include common_import.html %}
+		<script type="text/javascript" src="js/pi2.js"></script>
+
+
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			{% include common_css.html %}
+
+		</head>
+		<body class='map'>
+			{% include nav.html %}
+			{% include about.html %}
+			<svg id="svg"></svg>
+			{{ content }}
+		</body>
+	</html>

@@ -1,0 +1,5 @@
+name: PI Art
+markdown:
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
