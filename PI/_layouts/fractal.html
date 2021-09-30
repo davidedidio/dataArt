@@ -3,21 +3,22 @@
 	<meta charset="utf-8"/>
 
 		{% include common_import.html %}
-		<script type="text/javascript" src="js/pi.js"></script>
+		<script type="text/javascript" src="js/fractal.js"></script>
 
 
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			{% include common_css.html %}
-			<link rel="stylesheet" type="text/css" href="css/pi.css" />
+      <link rel="stylesheet" type="text/css" href="css/fractal.css" />
 
 
 		</head>
 		<body class='map'>
 			{% include nav.html %}
 			{% include about.html %}
-			<canvas id="canvas" width="800" height="800"></canvas>
+			<canvas id="canvas" width='100vw' height='100vh'></canvas>
+			<canvas id="canvas-tmp" width='100vw' height='100vh'></canvas>
 			{{ content }}
 		</body>
-	</html>
+  </html>

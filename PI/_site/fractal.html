@@ -44,16 +44,16 @@
 <!-- jQuery Custom Scroller CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-		<script type="text/javascript" src="js/pi2.js"></script>
+		<script type="text/javascript" src="js/fractal.js"></script>
 
 
 		<head>
-			<title>Pi</title>
+			<title>Fractal</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-			<link rel="stylesheet" type="text/css" href="css/pi.css" />
+      <link rel="stylesheet" type="text/css" href="css/fractal.css" />
 
 
 		</head>
@@ -89,35 +89,32 @@
   </div>
 </div>
 
-			<svg id="svg"></svg>
+			<canvas id="canvas" width='100vw' height='100vh'></canvas>
+			<canvas id="canvas-tmp" width='100vw' height='100vh'></canvas>
+			<!-- Options	>
+<div id='right-panel' class="card map-panel">
+  <header class="card-header">
+    <a href="#" data-toggle="collapse" data-target="#collapse-options" aria-expanded="true" class='collapsed'>
+      <i class="icon-action fa fa-sort-down"></i>
+      <span class="title">Options</span>
+    </a>
+  </header>
+  <div class="collapse" id="collapse-options" style="">
+    <div class="card-body">
+      <h6>Sequence :
+        <button type="button" class="btn btn-secondary dropdown-toggle" id="sequenceDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+          Pi
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+          <a class="dropdown-item" href="#">Pi</a>
+          <a class="dropdown-item" href="#">Alpha</a>
+          <a class="dropdown-item" href="#">Beta</a>
+        </div>
+      </h6>
+    </div>
+  </div>
+</div>
+< End Options	-->
 
-			<!-- Options	-->
-			<div id='right-panel'>
-			  <div class="card map-panel" id='options-card'>
-			      <header class="card-header">
-			          <a href="#" data-toggle="collapse" data-target="#collapse-options" aria-expanded="true" class='collapsed'>
-			              <i class="icon-action fa fa-sort-down"></i>
-			              <span class="title">Options</span>
-			          </a>
-			      </header>
-			      <div class="collapse" id="collapse-options" style="">
-							  <div class="card-body">
-									<h6>Sequence :
-										<button type="button" class="btn btn-secondary dropdown-toggle" id="sequenceDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-											Pi
-										</button>
-										<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-											<a class="dropdown-item" href="#">Pi</a>
-											<a class="dropdown-item" href="#">Alpha</a>
-											<a class="dropdown-item" href="#">Beta</a>
-										</div>
-									</h6>
-	              </div>
-			      </div>
-			  </div>
-			</div>
-			<!-- End Options	-->
-
-			
 		</body>
-	</html>
+  </html>

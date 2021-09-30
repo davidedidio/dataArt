@@ -10,12 +10,42 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			{% include common_css.html %}
+			<link rel="stylesheet" type="text/css" href="css/pi.css" />
+
 
 		</head>
 		<body class='map'>
 			{% include nav.html %}
 			{% include about.html %}
 			<svg id="svg"></svg>
+
+			<!-- Options	-->
+			<div id='right-panel'>
+			  <div class="card map-panel" id='options-card'>
+			      <header class="card-header">
+			          <a href="#" data-toggle="collapse" data-target="#collapse-options" aria-expanded="true" class='collapsed'>
+			              <i class="icon-action fa fa-sort-down"></i>
+			              <span class="title">Options</span>
+			          </a>
+			      </header>
+			      <div class="collapse" id="collapse-options" style="">
+							  <div class="card-body">
+									<h6>Sequence :
+										<button type="button" class="btn btn-secondary dropdown-toggle" id="sequenceDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+											Pi
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+											<a class="dropdown-item" href="#">Pi</a>
+											<a class="dropdown-item" href="#">Alpha</a>
+											<a class="dropdown-item" href="#">Beta</a>
+										</div>
+									</h6>
+	              </div>
+			      </div>
+			  </div>
+			</div>
+			<!-- End Options	-->
+
 			{{ content }}
 		</body>
 	</html>
